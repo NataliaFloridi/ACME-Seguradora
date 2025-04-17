@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/api/catalog/assistencias"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "assistances": [
+        "Encanador",
+        "Eletricista",
+        "Chaveiro 24h"
+      ]
+    }
+  }
+} 
