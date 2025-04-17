@@ -13,9 +13,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.acme.seguradora.domain.exception.ErrorCode;
-import com.acme.seguradora.domain.model.InsuranceQuote;
-import com.acme.seguradora.domain.port.out.port.InsuranceQuotePort;
+import com.acme.insurancecompany.application.usecase.insurancequote.UpdateInsuranceQuoteWithPolicyUseCaseImpl;
+import com.acme.insurancecompany.domain.exception.ErrorCode;
+import com.acme.insurancecompany.domain.model.InsuranceQuote;
+import com.acme.insurancecompany.domain.port.out.port.InsuranceQuotePort;
 
 @ExtendWith(MockitoExtension.class)
 public class UpdateInsuranceQuoteWithPolicyUseCaseImplTest {

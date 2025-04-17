@@ -15,19 +15,19 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.acme.seguradora.domain.exception.ValidationException;
-import com.acme.seguradora.domain.model.Assistance;
-import com.acme.seguradora.domain.model.Coverage;
-import com.acme.seguradora.domain.model.MonthlyPremiumAmount;
-import com.acme.seguradora.domain.port.out.port.CatalogPort;
-import com.acme.seguradora.infrastructure.adapter.out.client.response.OfferResponse;
-import com.acme.seguradora.infrastructure.adapter.out.client.response.ProductResponse;
-import com.acme.seguradora.application.dto.InsuranceQuoteRequest;
+import com.acme.insurancecompany.application.dto.InsuranceQuoteRequest;
+import com.acme.insurancecompany.domain.exception.ValidationException;
+import com.acme.insurancecompany.domain.model.Assistance;
+import com.acme.insurancecompany.domain.model.Coverage;
+import com.acme.insurancecompany.domain.model.MonthlyPremiumAmount;
+import com.acme.insurancecompany.domain.port.out.port.CatalogPort;
+import com.acme.insurancecompany.domain.validator.InsuranceQuoteValidator;
+import com.acme.insurancecompany.infrastructure.adapter.out.client.response.OfferResponse;
+import com.acme.insurancecompany.infrastructure.adapter.out.client.response.ProductResponse;
+
 import java.math.BigDecimal;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @ExtendWith(MockitoExtension.class)
 public class InsuranceQuoteValidationTest {

@@ -14,13 +14,14 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import com.acme.seguradora.domain.model.InsuranceQuote;
-import com.acme.seguradora.domain.port.in.usecase.insurancequote.CreateInsuranceQuoteUseCase;
-import com.acme.seguradora.domain.port.in.usecase.insurancequote.FindInsuranceQuoteUseCase;
-import com.acme.seguradora.domain.validator.InsuranceQuoteValidator;
-import com.acme.seguradora.application.mapper.InsuranceQuoteMapper;
-import com.acme.seguradora.application.dto.InsuranceQuoteRequest;
-import com.acme.seguradora.application.dto.InsuranceQuoteResponse;
+import com.acme.insurancecompany.application.dto.InsuranceQuoteRequest;
+import com.acme.insurancecompany.application.dto.InsuranceQuoteResponse;
+import com.acme.insurancecompany.application.mapper.InsuranceQuoteMapper;
+import com.acme.insurancecompany.domain.model.InsuranceQuote;
+import com.acme.insurancecompany.domain.port.in.usecase.insurancequote.CreateInsuranceQuoteUseCase;
+import com.acme.insurancecompany.domain.port.in.usecase.insurancequote.FindInsuranceQuoteUseCase;
+import com.acme.insurancecompany.domain.validator.InsuranceQuoteValidator;
+import com.acme.insurancecompany.infrastructure.adapter.in.web.InsuranceQuoteController;
 
 @ExtendWith(MockitoExtension.class)
 public class InsuranceQuoteControllerTest {

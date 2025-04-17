@@ -14,10 +14,8 @@ CREATE TABLE insurance_quotes (
     status VARCHAR2(20)
 );
 
--- Criar sequência para o ID
 CREATE SEQUENCE insurance_quotes_seq START WITH 1 INCREMENT BY 1;
 
--- Comentários nas colunas
 COMMENT ON COLUMN insurance_quotes.id IS 'Identificador único da cotação';
 COMMENT ON COLUMN insurance_quotes.insurance_policy_id IS 'ID da apólice de seguro';
 COMMENT ON COLUMN insurance_quotes.product_id IS 'ID do produto';

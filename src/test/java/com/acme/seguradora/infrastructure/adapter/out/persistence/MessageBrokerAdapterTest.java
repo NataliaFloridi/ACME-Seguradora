@@ -14,9 +14,9 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
-import com.acme.seguradora.domain.event.InsuranceQuoteCreatedEvent;
-import com.acme.seguradora.domain.model.InsuranceQuote;
-import com.acme.seguradora.infrastructure.adapter.out.persistence.adapter.broker.MessageBrokerAdapter;
+import com.acme.insurancecompany.domain.event.InsuranceQuoteCreatedEvent;
+import com.acme.insurancecompany.domain.model.InsuranceQuote;
+import com.acme.insurancecompany.infrastructure.adapter.out.persistence.adapter.broker.MessageBrokerAdapter;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

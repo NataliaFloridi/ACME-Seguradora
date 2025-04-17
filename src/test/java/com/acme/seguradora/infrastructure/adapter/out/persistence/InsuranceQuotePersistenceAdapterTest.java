@@ -15,13 +15,13 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.dao.DataAccessException;
 
-import com.acme.seguradora.domain.exception.QuotePersistenceException;
-import com.acme.seguradora.domain.exception.ResourceNotFoundException;
-import com.acme.seguradora.domain.model.InsuranceQuote;
-import com.acme.seguradora.application.mapper.InsuranceQuoteMapper;
-import com.acme.seguradora.infrastructure.adapter.out.persistence.adapter.insurancequote.InsuranceQuotePersistenceAdapter;
-import com.acme.seguradora.infrastructure.adapter.out.persistence.entity.InsuranceQuoteEntity;
-import com.acme.seguradora.infrastructure.adapter.out.persistence.repository.InsuranceQuoteRepository;
+import com.acme.insurancecompany.application.mapper.InsuranceQuoteMapper;
+import com.acme.insurancecompany.domain.exception.QuotePersistenceException;
+import com.acme.insurancecompany.domain.exception.ResourceNotFoundException;
+import com.acme.insurancecompany.domain.model.InsuranceQuote;
+import com.acme.insurancecompany.infrastructure.adapter.out.persistence.adapter.insurancequote.InsuranceQuotePersistenceAdapter;
+import com.acme.insurancecompany.infrastructure.adapter.out.persistence.entity.InsuranceQuoteEntity;
+import com.acme.insurancecompany.infrastructure.adapter.out.persistence.repository.InsuranceQuoteRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class InsuranceQuotePersistenceAdapterTest {
